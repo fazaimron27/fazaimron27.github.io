@@ -29,7 +29,7 @@ apa itu composer silahkan temen temen kepoin sendiri ya ;).
 Lanjuttt... kita buat folder(penamaan folder bebas yahh)
 misal **coba-php-phix**.
 
-```
+```bash
 mkdir coba-php-phix
 cd coba-php-phix
 ```
@@ -37,7 +37,7 @@ cd coba-php-phix
 Setelah itu install phinx menggunakan composer, bagi yang menggunakan windows silahkan
 buka foldernya menggunakan cmd, atau yang memakai linux / mac bisa menggunakan terminalnya.
 
-```
+```bash
 composer require robmorgan/phinx --dev
 ```
 
@@ -50,7 +50,7 @@ langkah selanjutnya untuk membuat skema migrasi database kita membutuhkan folder
 
 silahkan buat folder baru bernama **db**:
 
-```
+```bash
 mkdir -p db/{migrations,seeds}
 ```
 
@@ -69,7 +69,7 @@ abaikan folder **seeds** dulu temen temen...
 
 ## Inisialisasi Phinx
 
-```
+```bash
 php vendor/bin/phinx init
 ```
 
@@ -153,7 +153,7 @@ Selanjutnya ubah konfigurasi file phinx.php sesuai dengan nama databasenya.
 
 Selanjutnya, silahkan lakukan verifikasi konfigurasi dengan perintah:
 
-```
+```bash
 vendor/bin/phinx test
 ```
 
@@ -165,7 +165,7 @@ Jika hasilnya sukses, berarti konfigurasi kita benar.
 ## Membuat Migrasi
 
 Membuat migrasi dengan perintah:
-```
+```bash
 vendor/bin/phinx create User
 ```
 
@@ -219,7 +219,7 @@ public function change(): void
 Silahkan simpan dan jalankan perintah berikut untuk melakukan migrasi dari
 skema database yang kita buat.
 
-```
+```bash
 vendor/bin/phinx migrate -e development
 ```
 
@@ -235,7 +235,7 @@ Tadaaa table user sudah terbuat beserta dengan fieldnya.
 ## Menambahkan Kolom Baru pada Table
 
 Silahkan ketik perintah berikut untuk membuat migrasi baru.
-```
+```bash
 vendor/bin/phinx create AddUserAddress
 ```
 
@@ -263,7 +263,7 @@ final class AddUserAddress extends AbstractMigration
 ```
 Jalankan perintah migrasinya lagi.
 
-```
+```bash
 vendor/bin/phinx migrate -e development
 ```
 
@@ -276,7 +276,7 @@ nah kita sudah bisa menambahkan kolom baru dengan menggunakan phinx.
 
 Membuat *seeds* dengan perintah:
 
-```
+```bash
 vendor/bin/phinx seed:create Users
 ```
 
@@ -287,7 +287,7 @@ Sebelum melanjutkan membuat seeds atau data dummy kita akan menggunakan
 library **faker** untuk mengenerate data dummy.
 
 langsung kita install library tersebut dengan perintah.
-```
+```bash
 composer require fzaninotto/faker
 ```
 Silahkan tunggu sampai installasi selesai.
@@ -327,7 +327,7 @@ class Users extends AbstractSeed
 ```
 
 Jalankan perintah:
-```
+```bash
 vendor/bin/phinx seed:run
 ```
 
