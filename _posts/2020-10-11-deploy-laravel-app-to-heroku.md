@@ -141,6 +141,13 @@ dan menambahkan key yang ada didalam file **.env**
 heroku config:add APP_KEY=base64:e/qyhJhR8FeHQdWyIEGmeiqG7jH3nB92dQ4LvlT12L0=
 ```
 
+untuk tambahan konfigurasi...(optional, recommended)
+```bash
+heroku config:add APP_NAME=Laravel
+heroku config:add APP_ENV=production
+heroku config:add APP_URL=http://laravel8herokutest.herokuapp.com/
+```
+
 Silahkan refresh kembali...
 ![](../assets/posts/deploy-laravel-app-to-heroku/deploy-success.jpg)
 Nah kita sudah berhasil melakukan hosting / deploy projek laravel menggunakan platform heroku.
