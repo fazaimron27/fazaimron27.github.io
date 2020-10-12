@@ -20,23 +20,23 @@ Heroku termasuk ke dalam kriteria Platform As A Service (PaaS), sehingga bagi an
 
 Daftar gratis platform heroku [disini](https://signup.heroku.com/).
 
-## Install Heroku-cli
+## Instal Heroku-cli
 
 [Download Heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
 
-Silahkan download dan install heroku-cli pada device masing-masing disini saya
+Silahkan download dan instal heroku-cli pada device masing-masing disini saya
 menggunakan linux **ubuntu 18.04**.
 
-langkah pertama untuk menginstall heroku-cli adalah menginstall snap, apa itu *snap*?
+langkah pertama untuk menginstal heroku-cli adalah menginstal snap, apa itu *snap*?
 silahkan temen-temen kepoin sendiri ya :smile:.
 ```bash
 sudo apt install snap
 ```
 
-langkah selanjutnya, adalah menginstall heroku-cli
+langkah selanjutnya, adalah menginstal heroku-cli
 dengan perintah:
 ```bash
-sudo snap install --classic heroku
+sudo snap install heroku --classic
 ```
 
 cek versi heroku
@@ -50,16 +50,20 @@ heroku --version
 ```bash
 composer create-project --prefer-dist laravel/laravel laravel8-heroku
 ```
-Tunggu proses installasi Laravel hingga selesai.
+Tunggu proses instalasi Laravel hingga selesai.
 
-Jika installasi laravel, langkah selanjutnya menginstall dependency ui laravel
+Jika instalasi laravel sudah selesai, langkah selanjutnya menginstal dependency ui laravel
 dengan perintah:
 ```bash
 cd laravel-heroku
 composer require laravel/ui
 ```
 
-Tunggu proses installasi laravel ui hingga selesai.
+Tunggu proses instalasi laravel ui hingga selesai.
+
+Jika proses instalasi sudah selesai, silahkan buka di text editor kesayangan masing-masing :smile:.
+
+![](../assets/posts/deploy-laravel-app-to-heroku/laravel8-heroku.jpg)
 
 Pindahkan composer dependency (didalam file **composer.json**) require-dev ke require, menjadi seperti ini
 ```json
@@ -78,11 +82,6 @@ Pindahkan composer dependency (didalam file **composer.json**) require-dev ke re
   "phpunit/phpunit": "^9.3"
 },
 ```
-
-
-Jika sudah selesai mempersiapkan projek laravel, silahkan buka di text editor kesayangan masing-masing :smile:.
-
-![](../assets/posts/deploy-laravel-app-to-heroku/laravel8-heroku.jpg)
 
 ## Konfigurasi dan Proses Hosting
 
@@ -121,7 +120,7 @@ web: vendor/bin/heroku-php-apache2 public/
 push projek ke heroku
 ```bash
 git add .
-git commit -m "inital release"
+git commit -m "initial release"
 git push heroku master
 ```
 
