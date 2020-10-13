@@ -35,7 +35,7 @@ instagram:
   url   : https://www.instagram.com/
   icon  : fab fa-instagram
   color : 405de6
-  
+
 kaggle:
   url   : https://www.kaggle.com/
   icon  : fab fa-kaggle
@@ -89,4 +89,9 @@ vimeo:
 youtube:
   url   : https://www.youtube.com/
   icon  : fab fa-youtube
+  color : ff0000
+
+dev:
+  url   : https://dev.to/
+  icon  : fab fa-dev
   color : ff0000
