@@ -5,9 +5,9 @@ permalink: /about/
 weight: 3
 ---
 
-# **Tentang Saya**
+# **Halo**
 
-Annyeonghaseyo Saya **{{ site.author.name }}** :wave:,<br>
+Saya **{{ site.author.name }}** :wave:,<br>
 Saya mempunyai mimpi dan cita-cita menjadi Web Programmer, saat ini saya menempuh kuliah di jurusan ilmu komputer program studi informatika.
 Selain Pemogramaman, saya juga suka bermain futsal(kalo ada yang ngajak sih :smile:)
 
