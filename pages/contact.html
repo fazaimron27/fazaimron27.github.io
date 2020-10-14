@@ -26,7 +26,7 @@ permalink: /contact/
                     <h4 class="h4 text-secondary">Hubungi Saya</h4>
                 </div> -->
                 <div class="card-body">
-                    <form name="contact" netlify>
+                    <form name="contact" data-netlify-recaptcha="true" netlify>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-lg-6 mt-3">
@@ -43,6 +43,7 @@ permalink: /contact/
                         <div class="form-group">
                             <textarea class="form-control" name="message" placeholder="Pesan..." required></textarea>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <button type="submit" class="btn btn-outline-secondary">Kirim Pesan</button>
                     </form>
                 </div>
