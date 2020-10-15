@@ -1,5 +1,5 @@
 ---
-title: Migrasi database dengan php phinx
+title: Migrasi Database dengan PHP Phinx
 tags: [PHP, SQL, Web Development]
 style: border
 color: success
