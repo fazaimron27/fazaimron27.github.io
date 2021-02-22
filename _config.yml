@@ -64,9 +64,9 @@ disqus: fazaimron27                         # Your website Shortname on disqus
 
 ### Analytics ###
 analytics:
-  enabled: false                                        # Set true to enable analytics
+  enabled: true                                        # Set true to enable analytics
   google:
-    tracking_id: your-google-tracking-id
+    tracking_id: G-B45E0XPRNG
 
 
 ### Defaults for collections ###
