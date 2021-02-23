@@ -4,7 +4,7 @@ description         : >-
                       "Your time is limited, so don't waste it living someone else's life." - Steve Jobs
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : fazaimron27/fazaimron27.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : YoussefRaafatNasry/portfolYOU
+remote_theme        : fazaimron27/portfolYOU
 
 
 ### Plugins ###
