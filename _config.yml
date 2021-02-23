@@ -59,7 +59,8 @@ collections:
 
 
 ### Disqus ###
-disqus: fazaimron27
+disqus:
+  shortname: fazaimron27
 
 
 ### Analytics ###
