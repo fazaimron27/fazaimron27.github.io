@@ -1,9 +1,9 @@
 ---
-title: Hosting Aplikasi Laravel dengan Heroku
+title: Hosting Aplikasi Laravel Menggunakan Heroku
 tags: [Laravel, Heroku, PHP, SQL, Web Development]
 style: border
 color: primary
-description: Tutorial Hosting / Deploy Aplikasi Laravel dengan Heroku
+description: Tutorial Hosting / Deploy Aplikasi Laravel Menggunakan Heroku
 ---
 
 Source: [codepolitan](https://www.codepolitan.com/membuat-proyek-pertama-heroku-58b872c6217eb) [medium](https://medium.com/@amrilsyaifa_21001/tutorial-deploy-laravel-ke-hosting-heroku-5be2539365e0)
@@ -45,7 +45,7 @@ heroku --version
   heroku/7.45.0 linux-x64 node-v12.16.2
 ```
 
-## Persiapan Projek Laravel
+## Persiapan Project Laravel
 
 ```bash
 composer create-project --prefer-dist laravel/laravel laravel8-heroku
@@ -94,20 +94,20 @@ Tekan enter atau apapun (selain ‘q’) untuk membuka browser yang akan menanya
 ```bash
 heroku: Press any key to open up the browser to login or q to exit:
 ```
-setelah berhasil login heroku-cli, selanjutnya kita inisialisasi projek kita menggunakan git. apa itu [**git?**](https://www.petanikode.com/git-untuk-pemula/)
+setelah berhasil login heroku-cli, selanjutnya kita inisialisasi project kita menggunakan git. apa itu [**git?**](https://www.petanikode.com/git-untuk-pemula/)
 
 ```bash
 git init
 ```
 
-Langkah selanjutnya, membuat projek di platform heroku
+Langkah selanjutnya, membuat project di platform heroku
 dengan perintah:
 ```bash
 heroku create laravel8herokutest
 ```
 ![](../assets/posts/deploy-laravel-app-to-heroku/create-heroku-project.jpg)
 
-Tambahkan file **Procfile** kedalam projek laravel
+Tambahkan file **Procfile** kedalam project laravel
 ```bash
 touch Procfile
 ```
@@ -117,7 +117,7 @@ Tambahkan line berikut kedalam file **Procfile**
 web: vendor/bin/heroku-php-apache2 public/
 ```
 
-push projek ke heroku
+push project ke heroku
 ```bash
 git add .
 git commit -m "initial release"
@@ -125,7 +125,7 @@ git push heroku master
 ```
 
 Tunggu proses build dan deploy sampai selesai...
-Silahkan buka projek dengan perintah:
+Silahkan buka project dengan perintah:
 ```bash
 heroku open
 ```
@@ -149,7 +149,7 @@ heroku config:add APP_URL=http://laravel8herokutest.herokuapp.com/
 
 Silahkan refresh kembali...
 ![](../assets/posts/deploy-laravel-app-to-heroku/deploy-success.jpg)
-Nah kita sudah berhasil melakukan hosting / deploy projek laravel menggunakan platform heroku.
+Nah kita sudah berhasil melakukan hosting / deploy project laravel menggunakan platform heroku.
 
 ## Menggunakan Database PGSQL Heroku
 
@@ -188,7 +188,7 @@ heroku run php artisan migrate
 ```
 ![](../assets/posts/deploy-laravel-app-to-heroku/heroku-migrate.jpg)
 
-Push projek ke heroku kembali...
+Push project ke heroku kembali...
 ```bash
 git add .
 git commit -m "add auth"
@@ -199,9 +199,9 @@ Silahkan refresh kembali...
 ![](../assets/posts/deploy-laravel-app-to-heroku/register.jpg)
 ![](../assets/posts/deploy-laravel-app-to-heroku/register-success.jpg)
 
-Nah kita sudah bisa menghubungkan database pgsql heroku kedalam projek laravel.
+Nah kita sudah bisa menghubungkan database pgsql heroku kedalam project laravel.
 
-> Kita sudah belajar melakukan hosting / deploy projek laravel menggunakan heroku, untuk penjelasan
+> Kita sudah belajar melakukan hosting / deploy project laravel menggunakan heroku, untuk penjelasan
 >lebih lanjut silahkan temen temen kepoin sendiri ya :smile:
 
 > Tetep semangat belajar di masa pandemi ini ya temen temen.
