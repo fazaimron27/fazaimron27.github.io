@@ -1,5 +1,5 @@
 ---
-title: Migrasi Database dengan PHP Phinx
+title: Migrasi Database Menggunakan PHP Phinx
 tags: [PHP, SQL, Web Development]
 style: border
 color: success
@@ -125,8 +125,8 @@ digunakan oleh phinx.
 
 Ada tiga jenis konfigurasi yang digunakan dalam phinx:
 
--- **production** untuk server hosting
--- **development** untuk server lokal(localhost)
+-- **production** untuk server hosting\\
+-- **development** untuk server lokal(localhost)\\
 -- **testing** untuk server testing
 
 Untuk sekarang kita akan menggunakan konfigurasi development karena kita gunakan
@@ -196,9 +196,9 @@ Selain itu ada juga method **up()** dan **down()**.
 
 Apa fungsinya?
 
-Method **up()** akan dieksekusi ketika kita melakukan migrasi ke server (membuat tabel).
-Method **down()** akan dieksekusi saat kita melakukan rollback (menghapus tabel).
-Method **change()** kedua-duanya, ketika migrasi dan rollback.
+Method **up()** akan dieksekusi ketika kita melakukan migrasi ke server (membuat tabel).\\
+Method **down()** akan dieksekusi saat kita melakukan rollback (menghapus tabel).\\
+Method **change()** kedua-duanya, ketika migrasi dan rollback.\\
 Untuk memahaminya, mari kita eksekusi.....
 
 ```php
