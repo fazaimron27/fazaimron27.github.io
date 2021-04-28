@@ -1,7 +1,7 @@
 ---
 title: Hosting Website Statis Menggunakan Surge
 tags: [Javascript, Node, HTML, Tools]
-style: fill
+style: border
 color: primary
 description: Alternatif Free Hosting Selain Netlify dan Vercel
 ---
@@ -11,6 +11,12 @@ Source: [medium](https://medium.com/weekly-webtips/how-to-publish-a-static-web-u
 ## Apa itu Surge?
 
 Surge adalah platform deploy/hosting website statis. Berbeda dengan Netlify dan Vercel, Surge Tidak memerlukan dashboard admin untuk mengelola projek. Surge menggunakan CLI (Command-line interface) yang tentunya sangat simple penggunaanya.
+
+## Fitur-fitur Surge
+
+- Free Custom Domain
+- Free SSL untuk subdomain surge.sh
+- Custom Halaman **404.html**
 
 ## Get Started
 
@@ -47,5 +53,6 @@ npm install --global surge
   ![](../assets/posts/deploy-website-static-to-surge/02.png)
   Kemudian cek domain tersebut sudah aktif atau belum.
   ![](../assets/posts/deploy-website-static-to-surge/03.png)
-  Nah cukup mudah bukan ?, cukup 1 menit untuk melakukan proses deploy :smile:,
-  untuk dokumentasi resminya temen-temen bisa mengunjungi [surge](https://surge.sh/).
+
+  > Nah cukup mudah bukan ?, cukup 1 menit untuk melakukan proses deploy :smile:,
+  > untuk dokumentasi resminya temen-temen bisa mengunjungi [surge](https://surge.sh/).
