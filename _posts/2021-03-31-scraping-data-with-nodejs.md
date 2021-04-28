@@ -3,7 +3,7 @@ title: Scraping Data Menggunakan NodeJS
 tags: [Javascript, Node, Tools, SQL]
 style: fill
 color: success
-description: Lorem Ipsum Dolor Sit Amet
+description: Scraping Data Menggunakan NodeJS
 ---
 
 <!-- Source: [medium](https://medium.com/skyshidigital/membuat-web-scraper-di-node-js-497c59628042) -->
