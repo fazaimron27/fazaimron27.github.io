@@ -3,7 +3,7 @@ title: Notifikasi Repository Github Menggunakan Discord
 tags: [Github, Discord, Tools]
 style: border
 color: success
-description: Lorem Ipsum Dolor Sit Amet.
+description: Tips Hari Ini
 ---
 
 Source: [github](https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22)
