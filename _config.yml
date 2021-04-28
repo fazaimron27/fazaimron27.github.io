@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Faza Iman Imron
 description         : >-
-                      "Your time is limited, so don't waste it living someone else's life." - Steve Jobs
+                      "Experience is the name everyone gives to their mistakes." - Oscar Wilde
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : fazaimron27/fazaimron27.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : fazaimron27/portfolYOU
